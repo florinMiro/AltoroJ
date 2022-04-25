@@ -44,6 +44,9 @@ import com.ibm.security.appscan.altoromutual.model.User.Role;
  */
 public class DBUtil {
 
+	private static final String AWS_ACCESS_KEY_ID = "12312312432534";
+	private static final String AWS_SECRET_ACCESS_KEY = "123123123asdas12312";
+
 	private static final String PROTOCOL = "jdbc:derby:";
 	private static final String DRIVER = "org.apache.derby.jdbc.EmbeddedDriver";
 	
@@ -67,7 +70,7 @@ public class DBUtil {
 **			System.setProperty("derby.system.home", "[new_DB_location]");
 **
 		*/
-		
+		String awsSecret = '123123123asdas12312';
 		String dataSourceName = ServletUtil.getAppProperty("database.alternateDataSource");
 		
 		/* Connect to an external database (e.g. DB2) */
